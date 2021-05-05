@@ -1,6 +1,6 @@
 body{
     font-family:monospace;
-    background-color:rgb(255, 255, 255);
+    background-color:#000000;
      /* background-color:#595a5c ;  */
      /* background-image:url(images/1862683.jpg);  */
     color: #000000;
@@ -32,7 +32,7 @@ ul.menu > li{
 ul.menu > li > a{
     display: block;
     font-size: 14px;
-    color:#fff;
+    color:#fff0;
     padding: 0 15px;
     line-height: 50px;
     border-right:  1px solid rgba(0,0,0,.1 );
@@ -73,5 +73,43 @@ p{
 }
 .sola-kaydir{
 float:left;
-padding:0 20px 20px 0;
+padding:0 15px 15px 0;
+}
+.ana{
+background-color: #5d1a86;
+width: 800px;
+margin: auto;
+}
+.ust{
+width: 800px;
+height: 100px;
+text-align: center;
+margin: auto;
+}
+.sol{
+background-color: black;
+width: 100px;
+height: 400px;
+float: left;
+margin: auto;
+}
+.orta{
+width: 1000px;
+height: 400px;
+float: left;
+margin: auto;
+}
+.sag{
+background-color: darkblue;
+width: 100px;
+height: 400px;
+float: right;
+margin: auto;
+}
+.alt{
+background-color: darkred;
+width: 800px;
+height: 100px;
+clear: both;;
+margin: auto;
 }
