@@ -15,18 +15,19 @@
 <body>
     <div class="container-fluit">
         <div class="row">
-            <div class="col-4 col-sm-12 bg-primary"><img style="margin-left: 45px; margin-top: 5px;"
+        <span class="darkmode-ignore"><div class="col-4 col-sm-12 bg-primary"></span><img style="margin-left: 45px; margin-top: 5px;"
                     src="./images/logogölgeli2.png" alt=""></div>
         </div>
     </div>
 
     <!--navbar finish-->
+    
 
     <!--sol bar başlangıç-->
 
     <div class="container-fluit">
         <div class="row">
-            <div class="col-2" style="   height: 400px;">
+            <div class="col-2" style="margin-top: 100px; height: 400px; ">
                 <div style="margin-top: 25px; margin-left: 15px;" class="ornek">
                     <img src="images/IMG_1787.jpg" width="150px" class="sola-kaydir">
                   <p style="margin-top: 10px;">Deniz Efe YAŞAR</p>
@@ -44,7 +45,7 @@
 
             <!--orta bar başlangıç-->
 
-            <div class="col-8" style=" text-align: center;">
+            <div class="col-8" style="margin-top: 100px; text-align: center;">
                 <h1 style="margin-top: 50px;">HAKKIMDA</h1>
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime hic perspiciatis vel reprehenderit aut blanditiis placeat voluptatum aliquid modi, vero nostrum aperiam, repellat optio in repellendus sit, possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut architecto ipsa, libero, tenetur mollitia saepe dolorum quia nesciunt, eius dolores veniam similique magnam pariatur! Repellat aspernatur modi laborum. Qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a accusantium totam neque architecto quasi ipsa saepe. Vitae perspiciatis voluptatem hic fuga amet aliquam quasi perferendis non totam. Nulla, asperiores.</div>
             </div>
@@ -57,7 +58,7 @@
             <!--sağ bar başlangıç-->
 
             <div class="col-2" style="">
-                <div style="margin-left:200px; margin-top: 5px;">
+                <div style="margin-left:200px; margin-top: 5px; ">
                     <!-- weather widget start -->
                     <a target="_blank" href="https://bookeder.com/weather/istanbul-18319">
                         <img src="https://w.bookcdn.com/weather/picture/21_18319_1_21_3658db_250_2a48ba_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=765&anc_id=86980"
@@ -77,9 +78,36 @@
 
 
 
+    
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+      function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+      }
+      window.addEventListener('load', addDarkmodeWidget);
+    </script>
+
+<script>
+    const options = {
+        bottom: '64px', // default: '32px'
+        right: 'unset', // default: '32px'
+        left: '32px', // default: 'unset'
+        time: '0.5s', // default: '0.3s'
+        mixColor: '#fff', // default: '#fff'
+        backgroundColor: '#fff',  // default: '#fff'
+        buttonColorDark: '#100f2c',  // default: '#100f2c'
+        buttonColorLight: '#fff', // default: '#fff'
+        saveInCookies: true, // default: true,
+        label: '🌓', // default: ''
+        autoMatchOsTheme: true // default: true
+      }
+      
+      const darkmode = new Darkmode(options);
+      darkmode.showWidget();
+      </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
